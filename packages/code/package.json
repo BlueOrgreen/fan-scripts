@@ -1,6 +1,6 @@
 {
   "name": "@fan-scripts/code",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [],
   "author": "yunfan",
@@ -14,25 +14,20 @@
     "directory": "packages/code"
   },
   "exports": {
-    ".": {
+    "./eslint": {
       "types": "./dist/cjs/index.d.ts",
       "import": "./dist/esm/index.mjs",
       "require": "./dist/cjs/index.js"
     },
-    "./react": {
+    "./eslint/react": {
       "types": "./dist/cjs/react.d.ts",
       "import": "./dist/esm/react.mjs",
       "require": "./dist/cjs/react.js"
     },
-    "./typescript": {
+    "./eslint/typescript": {
       "types": "./dist/cjs/typescript.d.ts",
       "import": "./dist/esm/typescript.mjs",
       "require": "./dist/cjs/typescript.js"
-    },
-    "./prettier": {
-      "types": "./dist/cjs/prettier.d.ts",
-      "import": "./dist/esm/prettier.mjs",
-      "require": "./dist/cjs/prettier.js"
     }
   },
   "scripts": {
