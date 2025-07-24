@@ -1,0 +1,14 @@
+{
+  "name": "fan-scripts-monorepo",
+  "version": "1.0.0",
+  "description": "日常开发工具包",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.0"
+  }
+}
