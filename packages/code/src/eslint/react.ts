@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   extends: [
     './typescript',
     'plugin:react/recommended',
@@ -15,3 +15,5 @@ module.exports = {
     '@typescript-eslint/indent': [ 'error', 2 ],
   },
 };
+
+export default config

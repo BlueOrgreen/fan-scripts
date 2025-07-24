@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -13,3 +13,5 @@ module.exports = {
     '@typescript-eslint/indent': [ 'error', 2 ],
   },
 };
+
+export default config

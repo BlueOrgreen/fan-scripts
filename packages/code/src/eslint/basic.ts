@@ -1,5 +1,4 @@
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
+const config = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -582,3 +581,5 @@ module.exports = {
   },
 };
 
+
+export default config
