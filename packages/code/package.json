@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "",
+  "author": "yunfan",
   "files": [
     "eslint/*.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueOrgreen/fan-scripts.git",
+    "directory": "packages/code"
+  },
   "scripts": {
       "lint": "eslint \"**/*.js\" --fix"
   },
@@ -23,6 +28,5 @@
     "react": "^18.0.0",
     "typescript": "^4.6.3"
   },
-
-  "license": "ISC"
+  "license": "MIT"
 }
