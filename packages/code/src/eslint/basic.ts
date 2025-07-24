@@ -8,6 +8,7 @@ const config = {
     node: true,
     es6: true,
   },
+  plugins: ['import', 'unused-imports'],
   rules: {
     // require `super()` calls in constructors
     'constructor-super': [ 'error' ],
