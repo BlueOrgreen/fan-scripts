@@ -1,11 +1,11 @@
 {
   "name": "@fan-scripts/code",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "keywords": [],
   "author": "yunfan",
   "files": [
-    "eslint/*.js"
+    "dist"
   ],
   "homepage": "https://github.com/BlueOrgreen/fan-scripts//packages/code",
   "repository": {
