@@ -545,6 +545,40 @@ module.exports = {
     'template-curly-spacing': [ 'error' ],
     // 强制在 yield* 表达式中 * 周围使用空格
     'yield-star-spacing': [ 'error' ],
+
+    /* ********************************** Module Import ********************************** */
+    'import/no-absolute-path': 0,
+    'import/extensions': 0,
+    'import/no-named-default': 0,
+    'no-restricted-exports': 0,
+    'import/no-extraneous-dependencies': 0,
+    // 模块导入顺序规则
+    'import/order': [
+        1,
+        {
+            pathGroups: [
+                {
+                    pattern: '@/**',
+                    group: 'external',
+                    position: 'after',
+                },
+            ],
+            alphabetize: { order: 'asc', caseInsensitive: false },
+            'newlines-between': 'always-and-inside-groups',
+            warnOnUnassignedImports: true,
+        },
+    ],
+    // 自动删除未使用的导入
+    // https://github.com/sweepline/eslint-plugin-unused-imports
+    'unused-imports/no-unused-imports': 1,
+    'unused-imports/no-unused-vars': [
+        'error',
+        {
+            vars: 'all',
+            args: 'none',
+            ignoreRestSiblings: true,
+        },
+    ],
   },
 };
 
