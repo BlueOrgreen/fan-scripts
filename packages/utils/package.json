@@ -1,0 +1,85 @@
+{
+  "name": "@fan-scripts/utils",
+  "version": "1.0.0",
+  "description": "@fan-scripts 工具库",
+  "keywords": [],
+  "author": "yunfan",
+
+  "homepage": "https://github.com/BlueOrgreen/fan-scripts/packages/utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueOrgreen/fan-scripts.git",
+    "directory": "packages/utils"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.mjs"
+    }
+  },
+  "main": "./dist/esm/index.mjs",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/esm/index.d.ts",
+    "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm run build"
+  },
+    "dependencies": {
+    "commander": "^12.1.0",
+    "configstore": "^7.0.0",
+    "consola": "^3.2.3",
+    "cosmiconfig": "^9.0.0",
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "envinfo": "^7.14.0",
+    "execa": "^8.0.1",
+    "image-size": "^1.1.1",
+    "file-type": "^19.6.0",
+    "filesize": "^10.1.6",
+    "fs-extra": "^11.2.0",
+    "git-repo-info": "^2.1.1",
+    "glob": "^11.0.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^9.2.11",
+    "inquirer-autocomplete-prompt": "^3.0.1",
+    "inquirer-fuzzy-path": "^2.3.0",
+    "lodash-es": "^4.17.21",
+    "mime": "^4.0.4",
+    "minimist": "^1.2.8",
+    "open": "^10.1.0",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "recursive-readdir": "^2.2.3",
+    "semver": "^7.5.4",
+    "tty-table": "^4.2.3",
+    "undici": "^6.20.1",
+    "update-notifier": "^7.3.1",
+    "cli-progress": "^3.12.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/configstore": "^6.0.2",
+    "@types/envinfo": "^7.8.4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/gradient-string": "^1.1.6",
+    "@types/inquirer": "^9.0.7",
+    "@types/inquirer-autocomplete-prompt": "^3.0.2",
+    "@types/inquirer-fuzzy-path": "^2.3.8",
+    "@types/lodash-es": "4.17.12",
+    "@types/minimist": "^1.2.5",
+    "@types/prompts": "^2.4.9",
+    "@types/recursive-readdir": "^2.2.4",
+    "@types/semver": "^7.5.2",
+    "@types/update-notifier": "^6.0.8",
+    "@types/cli-progress": "^3.11.6"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "@fan-scripts/code",
   "version": "1.0.6",
-  "description": "",
+  "description": "统一的 ESLint、Prettier、TS 配置",
   "keywords": [],
   "author": "yunfan",
   "files": [

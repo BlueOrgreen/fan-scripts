@@ -18,6 +18,7 @@
 | 包名                  | 描述                        |
 | ------------------- | ------------------------- |
 | `@fan-scripts/code` | 统一的 ESLint、Prettier、TS 配置 |
+| `@fan-scripts/utils` | 前端、node、git、cli 等工具库 |
 | `@fan-scripts/cli`  | 脚手架 CLI 工具（开发中）           |
 | ...                 | 更多工具包持续开发中...             |
 
@@ -29,7 +30,9 @@
 
 ```bash
 
-pnpm run ci-publish @fan-scripts/code@1.0.6  
+pnpm run ci-publish @fan-scripts/code@1.0.6 
+
+pnpm run ci-publish @fan-scripts/utils@1.0.0
 ```
 
 

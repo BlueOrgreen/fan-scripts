@@ -1,11 +1,24 @@
 {
   "name": "@fan-scripts/dev-scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "一些便捷的前端开发脚本，支持快捷发布 npm 包、批量转换文件后缀名、git 快捷操作等",
+  "keywords": [],
+  "author": "yunfan",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/BlueOrgreen/fan-scripts/packages/dev-scripts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueOrgreen/fan-scripts.git",
+    "directory": "packages/dev-scripts"
+  },
+  "type": "module",
+  "bin": {
+    "dev-scripts": "./dist/esm/cli.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
