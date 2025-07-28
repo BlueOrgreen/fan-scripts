@@ -18,7 +18,7 @@
 | 包名                  | 描述                        |
 | ------------------- | ------------------------- |
 | `@fan-scripts/code` | 统一的 ESLint、Prettier、TS 配置 |
-| `@fan-scripts/utils` | 前端、node、git、cli 等工具库 |
+| `@fan-scripts/utils` | 构建 CLI 工具、处理文件系统、进行网络请求、实现终端交互 等工具库 |
 | `@fan-scripts/cli`  | 脚手架 CLI 工具（开发中）           |
 | ...                 | 更多工具包持续开发中...             |
 
