@@ -35,8 +35,27 @@ import imageSize from 'image-size'
 inquirer.registerPrompt('fuzzypath', fuzzypath)
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
 
+
 export * as filetype from 'file-type'
 export * as lodash from 'lodash-es'
+
+export const checkUpdate = (pkg: any) => {
+  updateNotifier({
+    pkg,
+    shouldNotifyInNpmScript: true,
+  }).notify({
+    message:
+      'Update available ' +
+      pico.dim('{currentVersion}') +
+      pico.reset(' → ') +
+      pico.green('{latestVersion}') +
+      ' \nRun ' +
+      pico.cyan(`pnpm update {packageName}@{latestVersion}`) +
+      ' to update',
+    defer: false,
+  })
+}
+
 
 export {
   fs,
@@ -64,4 +83,53 @@ export {
   ora,
   cliProgress,
   imageSize,
+}
+
+export const checkNodeVersion = (wanted: string, name: string): void => {
+  if (!semver.satisfies(process.version, wanted, { includePrerelease: true })) {
+    console.log(
+      pico.red(
+        `You are using Node ${process.version} , but this version of ${name} requires Node ${wanted}.
+           Please upgrade your Node version.`,
+      ),
+    )
+    process.exit(1)
+  }
+}
+
+
+
+export const gs = (
+  str: string,
+  options = [
+    { color: '#42d392', pos: 0 },
+    { color: '#42d392', pos: 0.1 },
+    { color: '#647eff', pos: 1 },
+  ],
+) => {
+  if (process.stdout.isTTY && process.stdout.getColorDepth() > 8) {
+    return gstring(options)(str)
+  } else {
+    return str
+  }
+}
+
+export const prepareCli = <T extends Record<string, any>>(
+  packageJson: T,
+): T => {
+  if (!packageJson) {
+    return {
+      name: '',
+      version: '',
+    } as any
+  }
+  const {
+    engines: { node },
+    name,
+  } = packageJson
+
+  checkNodeVersion(node, name)
+  checkUpdate(packageJson)
+
+  return packageJson
 }

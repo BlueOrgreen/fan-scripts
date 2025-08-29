@@ -1,10 +1,12 @@
 {
   "name": "@fan-scripts/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@fan-scripts 工具库",
-  "keywords": [],
+  "keywords": [
+    "fan-scripts",
+    "utils"
+  ],
   "author": "yunfan",
-
   "homepage": "https://github.com/BlueOrgreen/fan-scripts/packages/utils",
   "repository": {
     "type": "git",
