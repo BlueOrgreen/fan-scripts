@@ -2,7 +2,9 @@
   "name": "fan-scripts-monorepo",
   "version": "1.0.0",
   "description": "日常开发工具包",
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "ci-publish": "ts-node scripts/publishCI.ts",
     "dev": "turbo run dev",
@@ -15,21 +17,23 @@
     "@types/node": "^17.0.35",
     "@types/prompts": "^2.0.14",
     "@types/semver": "^7.3.9",
-    "turbo": "^1.12.0",
-    "minimist": "^1.2.6",
-    "picocolors": "^1.0.0",
     "execa": "5.1.1",
     "father-build": "^1.22.2",
     "fs-extra": "^10.1.0",
     "git-repo-info": "^2.1.1",
+    "minimist": "^1.2.6",
+    "picocolors": "^1.0.0",
     "prettier": "^2.6.2",
     "prompts": "^2.4.2",
     "semver": "^7.3.7",
     "ts-node": "^10.7.0",
     "tsup": "^8.0.1",
+    "tsx": "^4.20.5",
+    "turbo": "^1.12.0",
+    "typescript": "^5.3.3",
     "unbuild": "^0.7.4"
   },
-    "engines": {
+  "engines": {
     "node": ">=18",
     "pnpm": ">=9"
   },
