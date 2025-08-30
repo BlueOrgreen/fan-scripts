@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@fan-scripts/utils": "^1.0.1",
+    "@fan-scripts/utils": "^1.0.2",
     "conventional-changelog-cli": "5.0.0",
     "npm-keyword": "^7.0.0",
     "package-json": "^8.1.1",

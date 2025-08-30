@@ -79,7 +79,7 @@ export const getDepsChange = (deps: Pkg[]): boolean => {
 export const getSelfBinPath = (binName: string): string => {
   const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-  const binPath = path.join(__dirname, '../../../node_modules/.bin', binName)
+  const binPath = path.join(__dirname, '../../../../node_modules/.bin', binName)
 
   return binPath
 }

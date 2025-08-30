@@ -81,7 +81,8 @@ export const publish = async (tag: string) => {
 }
 
 export const release = async (): Promise<void> => {
-  if (!(await confirmGitBranch()) || !(await confirmWorktreeEmpty())) return
+  // if (!(await confirmGitBranch()) || !(await confirmWorktreeEmpty())) return
+  if (!(await confirmGitBranch())) return
 
   const { repoType } = await inquirer.prompt<{ repoType: RepoType }>([
     {
