@@ -17,13 +17,6 @@ import addPackage from './scripts/addPackage.mjs'
 import gitGkd from './scripts/gitGkd.mjs'
 import releasePackage from './scripts/releasePackage/index.mjs'
 
-console.log(path.dirname(fileURLToPath(import.meta.url)));
-console.log("Yunfan === Test", path.resolve(
-    path.dirname(fileURLToPath(import.meta.url)),
-    '../package.json',
-  ),);
-
-
 
 const packageJson = fs.readJSONSync(
   path.resolve(
