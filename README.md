@@ -36,6 +36,11 @@ pnpm run ci-publish @fan-scripts/code@1.0.6
 pnpm run ci-publish @fan-scripts/utils@1.0.0
 ```
 
+使用自己写的发包工具 `@fan-scripts/dev-scripts` 进行发包
+
+```bash
+pnpm exec tsx ./packages/dev-scripts/src/cli.mts releasePackage
+```
 
 <br />
 

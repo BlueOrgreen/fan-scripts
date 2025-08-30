@@ -2,7 +2,7 @@
   "name": "@fan-scripts/dev-scripts",
   "version": "1.0.0",
   "description": "一些便捷的前端开发脚本，支持快捷发布 npm 包、批量转换文件后缀名、git 快捷操作等",
-    "keywords": [
+  "keywords": [
     "fan-scripts",
     "dev-scripts",
     "addPackage",
@@ -24,11 +24,12 @@
     "dev-scripts": "./dist/esm/cli.mjs"
   },
   "scripts": {
-     "test": "echo `test`"
+    "test": "echo `test`"
   },
   "license": "MIT",
   "dependencies": {
-    "@fan-scripts/utils": "workspace:*",
+    "@fan-scripts/utils": "^1.0.1",
+    "conventional-changelog-cli": "5.0.0",
     "npm-keyword": "^7.0.0",
     "package-json": "^8.1.1",
     "which": "5"
