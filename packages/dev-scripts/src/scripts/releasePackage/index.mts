@@ -254,6 +254,12 @@ export const release = async (): Promise<void> => {
 }
 
 const releasePackage = async () => {
+     consola.log(
+      pico.red(
+        ` minimist(process.argv.slice(2)): ${JSON.stringify(minimist(process.argv.slice(2)))}`,
+      ),
+    )
+  
   const { tag } = minimist(process.argv.slice(2))
   try {
     tag ? publish(tag) : release()

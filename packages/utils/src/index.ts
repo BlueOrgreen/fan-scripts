@@ -145,12 +145,13 @@ export const getMonorepoPkgListInfo = async (): Promise<
   }[]
 > => {
   const pkgInfoList: {
-    pkgDir: string
-    pkgDirPath: string
-    pkgJsonFilePath: string
-    pkgName: string
-    pkgCurrentVersion: string
+    pkgDir: string // 包所在的目录名
+    pkgDirPath: string // 包的完整路径
+    pkgJsonFilePath: string // 这个包的 package.json 的完整路径
+    pkgName: string // package.json 里的 "name"
+    pkgCurrentVersion: string // package.json 里的 "version"
   }[] = []
+  // process.cwd() → 当前运行进程所在的工作目录（一般是项目根目录）
   const targetDirPath = path.resolve(process.cwd(), './packages')
   const pkgDirList = await fs.readdir(targetDirPath)
 
