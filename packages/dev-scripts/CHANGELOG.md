@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/BlueOrgreen/fan-scripts/compare/@fan-scripts/dev-scripts@1.0.0...@fan-scripts/dev-scripts@1.0.1) (2025-09-06)
+
+
+### Features
+
+* 完善文档 ([4aef2ff](https://github.com/BlueOrgreen/fan-scripts/commit/4aef2ffcd3ba1456eef58b4ac311e3ce9b9d6bbb))
+
 ## 1.0.0 (2025-08-30)
 
 
